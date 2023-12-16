@@ -138,17 +138,7 @@ while true
                 Cydr1=Cydr;
                 Cndr1=Cndr;
                 Cyb1=Cyb;
-
-                eqn3=0.5*1.225*(VT^2)*1.81*b;
-                eqn4=eqn3*2*Cnb*(beta-S.sigma);
-                eqn5=eqn3*Cndr*S.deflcw;
-                eqn6=Fw*dc*cos(S.sigma);
-                eqn7=0.5*1.225*(Vw^2)*Ss*Cdy;
-                eqn8=0.5*1.225*(VT^2)*1.81;
-                eqn9=eqn8*Cyb*(beta-S.sigma);
-                eqn10=eqn8*Cydr*S.deflcw;
-                eqn11 = T*sin(sigma);
-
+                
                 sigma1=S.sigma;
                 deflcw1=S.deflcw;
                 defr1=defr;
@@ -180,13 +170,6 @@ fprintf('Cndr: %.6f\n', Cndr1);
 fprintf('Cydr: %.6f\n', Cydr1);
 
 
-fprintf('0.5*1.225*(VT^2)*1.81*b * 2*Cnb*(S.sigma): %.6f\n', eqn4);
-fprintf('0.5*1.225*(VT^2)*1.81*b * Cndr*S.deflcw: %.6f\n', eqn5);
-fprintf('Fw*dc*cos(S.sigma): %.6f\n', eqn6);
-fprintf('0.5*1.225*(Vw^2)*Ss*Cdy: %.6f\n', eqn7);
-
-fprintf('0.5*1.225*(VT^2)*1.81 * Cyb*(S.sigma): %.6f\n', eqn9);
-fprintf('0.5*1.225*(VT^2)*1.81 * Cydr*S.deflcw: %.6f\n', eqn10);
 
 fprintf('T*sin(sigma): %.6f\n', eqn11);
 
